@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Home Page -->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: 28th October 2024 -->
+    <!-- Validated: 30thOctober 2024-->
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="HomePage" content="JRJ Food Court homepage">
+    <meta name="keywords" content="Food, restaurants, floor">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <article>
+        <div class="opening">
+            <h1>Meet the members of The Creatives! The people behind the creation of this website</h1>
+        </div>
+
+        <div class="members">
+            <div class="text">
+                <h2>We Are The Creatives</h2>
+                <p>We are a group of students with varied backgrounds who all have develop different tastes in food. 
+                    <br/>Through this difference we have come together to create a website that tries to <br/> cater to as much people's
+                taste bud as possible.</p>
+            </div>
+            <div class="members-pictures">
+                <figure>
+                    <img src="images/Joel_J.jpg" alt="Joel Jack">
+                    <figcaption>Joel Anak Jack</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Raaid.jpg" alt="Abdullah Raaid">
+                    <figcaption>Abdullah Raaid Ali Khan</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Joel_O.jpg" alt="Joel Ooi">
+                    <figcaption>Joel Ooi Cho Yaw</figcaption>
+                </figure>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+    </footer>
+</body>
+</html>

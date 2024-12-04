@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : McDonald's Webpage-->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>McDonalds</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="Mcd" content="Mcd webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<article class="restaurants">
+    <div class = "header">
+        <a href="#target-section">
+        <!-- This image is taken from https://www.mcdonalds.com.my/promotion/chocolatey-goodness-with-hersheys-->
+        <img src = "images/mcd2.jpg" alt="Icecreams">
+        </a>
+        
+    </div>
+    <div class="header">
+        <!-- This image is taken from https://www.mcdonalds.com.my/promotion/the-prosperity-burger -->
+        <img src="images/mcd1.png" alt="Prosperity Burger Promo">
+        <p></p>
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        
+        <div class="menu-section">
+            <div class="menu-column">
+                <ul>
+                    <li><h2>BURGERS</h2></li>
+                    <li class="menu-item">
+                        <span>Big Mac</span>
+                        <span class="price">7</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Beefburger</span>
+                        <span class="price">15</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cheeseburger</span>
+                        <span class="price">18</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Double Cheeseburger</span>
+                        <span class="price">17</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Prosperity Burger</span>
+                        <span class="price">19</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Filet-O-Fish</span>
+                        <span class="price">17</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-column">
+                <figure>
+                            <!-- This image is taken from https://www.thestar.co.uk/lifestyle/food-and-drink/double-big-macs-and-celebrations-mcflurry-mcdonalds-launches-its-christmas-menu-3041358 -->
+                    <img src="images/mcd3.jpg" alt="Big Mac">
+                </figure>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-column">
+                <figure>
+                    <!-- This images is taken from https://senaraiharga.com/menu-mcd-price/french-fries/ -->
+                    <img src = "images/mcd4.jpg" alt="French Fries">
+                </figure>
+            </div>
+
+            <div class="menu-column">
+                <ul>
+                    <li><h2>DESSERTS & SIDES</h2></li>
+                    <li class="menu-item">
+                        <span>French Fries</span>
+                        <span class="price">34</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Corn Cup</span>
+                        <span class="price">33</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Apple Pie</span>
+                        <span class="price">36</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Sundae (Chocolate/Strawberry)</span>
+                        <span class="price">34</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Oreo McFlurry</span>
+                        <span class="price">45</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="review-container">
+        <h1>Reviews</h1>
+        <div class="review">
+                <div class="reviewer-info">
+                    <div class="reviewer-initials">KW</div>
+                    <div class="reviewer-details">
+                        <p>Ken Wong</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <p><span class="stars">★★★★☆</span><span class="review-date">7 Months ago</span></p>
+                </div>
+            <div class="review-body">
+                <h3>Good but not good enough</h3>
+                <p>Food & customer service meet expectations, but need to improve cleanliness.
+                    <p>Food: 4/5  |  Service: 4/5  |  Atmosphere: 4/5</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">K</div>
+                <div class="reviewer-details">
+                    <p>KANG 678</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★☆☆☆☆</span><span class="review-date">2 Months ago</span></p>
+            </div>
+        <div class="review-body">
+            <h3>Not Good</h3>
+            <p>Poor service , wait near to one hour alr . Still not yet my turn . But the one behind me already got the food .
+                <p>Food: 1/5  |  Service: 1/5  |  Atmosphere: 1/5</p>
+        </div>
+    </div>
+    </div>
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>

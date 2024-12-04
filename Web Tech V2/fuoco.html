@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Description: Fuoco Web Page -->
+    <!-- Author: Abdullah Raaid-->
+    <!-- Date: October 2024 -->
+    <!-- Validated: October 2024 -->
+    <title>JRJ Food Court</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Abdullah Raaid">
+    <meta name="Fuoco Webpage" content="Fuoco Webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                <img src="images/logo3.1.jpg" alt="logo">
+            </div>
+            <h3><a href = "index.html">JRJ Food Court</a></h3>
+            <p>Q5B, 93350 Kuching, Sarawak</p>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="ground-floor">
+                    <a href="kfc.html">KFC</a>
+                    <a href="dominos.html">Domino's Pizza</a>
+                    <a href="mcd.html">McDonalds</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="first-floor">
+                    <a href="tomo.html">Tomo</a>
+                    <a href="taiwanbowl.html">Taiwan Bowl</a>
+                    <a href="kimchi.html">Kimchi</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="second-floor">
+                    <a href="paris.html">Meet Me in Paris</a>
+                    <a href="fuoco.html">Fuoco</a>
+                    <a href="hautedolci.html">Haute Dolci</a>
+                </div></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="thecreatives.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="restaurants">
+        <div class="header">
+            <a href="#target-section">
+            <img class="fuoco1" src="images/fuoco.jpg" alt="Chocolate">
+            </a>
+        </div>
+
+        <div class="header">
+            <img src="images/fucho1.jpg" alt="hautedolce banner">
+        </div>
+
+        <div id="target-section" class="menu-container">
+            <h1>Menu</h1>
+            
+            <!-- Fish -->
+            <div class="menu-section">
+                <div class="menu-column">
+                    <ul>
+                        <li><h2>Fish</h2></li>
+                        <li class="menu-item">
+                            <span>Seared Salmon</span>
+                            <span class="price">RM99</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Fig Salad</span>
+                            <span class="price">RM6</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Truffle Risotto</span>
+                            <span class="price">RM14</span>
+                        </li>
+                        <li><br/><br/><br/></li>
+                        <li><h2>Pizza</h2></li>
+                        <li class="menu-item">
+                            <span>Margherita</span>
+                            <span class="price">RM70</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Pesto</span>
+                            <span class="price">RM15</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Scrapetta</span>
+                            <span class="price">RM8</span>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="menu-column">
+                    <figure>
+                        <img src="images/fuoco4.jpg" alt="fuoco menu 1">
+                    </figure>
+                </div>
+            </div>
+    
+            <!-- Pizza -->
+            <div class="menu-section">
+                <div class="menu-column">
+                    <figure>
+                        <img src="images/Fuoco3.jpg" alt="Sweet">
+                    </figure>
+                </div>
+                <div class="menu-column">
+                    <ul>
+                        <li><h2>Pizza</h2></li>
+                        <li class="menu-item">
+                            <span>Margherita</span>
+                            <span class="price">RM70</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Pesto</span>
+                            <span class="price">RM15</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Scrapetta</span>
+                            <span class="price">RM8</span>
+                        </li>
+                        <li><span><br/><br/><br/></span></li>
+                        <li><h2>Bar</h2></li>
+                        <li class="menu-item">
+                            <span>Basque Burnt Cheesecake</span>
+                            <span class="price">RM6</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Tiramisu</span>
+                            <span class="price">RM10</span>
+                        </li>
+                        <li class="menu-item">
+                            <span>Creme Brulee</span>
+                            <span class="price">RM8</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="review-container">
+            <h1>Reviews</h1>
+            <div class="review">
+                <div class="reviewer-info">
+                    <div class="reviewer-initials">FS</div>
+                    <div class="reviewer-details">
+                        <p>Farrukh Sheikh</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <p><span class="stars">★★★★☆</span><span class="review-date">4 Months ago</span></p>
+                </div>
+                <div class="review-body">
+                    <h3>A very pleasant experience</h3>
+                    <p>Good Service, great ambience, savoury food options were ok. Desserts are better, and options are plenty. Best of the place is the San Sebastian cheese cake...</p>
+                    <p>Food: 4/5 | Service: 5/5 | Atmosphere: 5/5</p>
+                    <p>Recommended dishes: Spanish Omelette, Matilda Cake</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="reviewer-info">
+                    <div class="reviewer-initials">MM</div>
+                    <div class="reviewer-details">
+                        <p>Mehwish Malik</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <p><span class="stars">★★★★★</span><span class="review-date">2 Months ago</span></p>
+                </div>
+                <div class="review-body">
+                    <h3>Best Place for Fine Dining</h3>
+                    <p>This is the best fine dining place in Lahore, quality food with the yummiest taste...</p>
+                    <p>Food: 5/5 | Service: 5/5 | Atmosphere: 5/5</p>
+                    <p>Recommended dishes: Classic Cheese Pizza, Beef Burger, Waffle</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    </article>
+    <footer>
+        <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+    </footer>
+</body>
+</html>

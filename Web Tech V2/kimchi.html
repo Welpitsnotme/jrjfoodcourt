@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : KIMCHI -->
+    <!-- Author: Joel Ooi -->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>KIMCHI</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Ooi">
+    <meta name="KIMCHI" content="KIMCHI">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                <img src="images/logo3.1.jpg" alt="logo">
+            </div>
+            <h3><a href = "index.html">JRJ Food Court</a></h3>
+            <p>Q5B, 93350 Kuching, Sarawak</p>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="ground-floor">
+                    <a href="kfc.html">KFC</a>
+                    <a href="dominos.html">Domino's Pizza</a>
+                    <a href="mcd.html">McDonalds</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="first-floor">
+                    <a href="tomo.html">Tomo</a>
+                    <a href="taiwanbowl.html">Taiwan Bowl</a>
+                    <a href="kimchi.html">Kimchi</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="second-floor">
+                    <a href="paris.html">Meet Me in Paris</a>
+                    <a href="fuoco.html">Fuoco</a>
+                    <a href="hautedolci.html">Haute Dolci</a>
+                </div></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="thecreatives.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<article class="restaurants">
+    <div class = "header">
+    <a href="#target-section">	
+        <!-- This image is taken from https://www.hungryhuy.com/bibimbap-recipe/ -->	
+        <img src = "images/bibimbap.jpg" alt="bibimbab">
+    </a>    
+    </div>
+    <div class="header">
+<!-- This image is taken from https://www.pinterest.com/pin/branding-for-the-korean-restaurant-in-the-south-of-kazakhstan-branding-prlx-studio-art-direct--13370130134785746/ -->
+        <img src="images/korean.gif" alt="restaurantlogo">
+    </div>
+<div id="target-section" class="menu-container">
+    <h1>Menu</h1>
+        
+    <div class="menu-section">
+        <div class="menu-column">
+            <ul>
+                <li><h2>MAIN DISH</h2></li>
+                <li class="menu-item">
+                    <span>Bulgogi (Marinated Grilled Beef)</span>
+                    <span class="price">20</span>
+                </li>
+                <li class="menu-item">
+                    <span>Bibimbap (Mixed Rice with Vegetables)</span>
+                    <span class="price">18</span>
+                </li>
+                <li class="menu-item">
+                    <span>Jajangmyeon (Black Bean Paste Noodles)</span>
+                    <span class="price">16</span>
+                </li>
+                <li class="menu-item">
+                    <span>Kimchi Jjigae (Spicy Kimchi Stew)</span>
+                    <span class="price">15</span>
+                </li>
+                <li class="menu-item">
+                    <span>Tteokbokki (Spicy Rice Cakes)</span>
+                    <span class="price">14</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-column">
+            <figure>
+                <!-- This image is taken from https://www.177milkstreet.com/recipes/beef-bulgogi -->
+                <img src="images/bulgogi.jpg" alt="bulgogi">
+            </figure>
+        </div>
+    </div>
+
+    <div class="menu-section">
+    <!-- Image Column -->
+        <div class="menu-column">
+            <figure>
+                <!-- This image is taken from https://www.thekitchn.com/how-to-make-easy-kimchi-at-home-189390 -->			
+                <img src="images/kimchi.webp" alt="Japanese noodles">
+            </figure>
+        </div>
+
+        <!-- Noodle Menu Column -->
+        <div class="menu-column">
+            <ul>
+                <li><h2>SIDE DISH</h2></li>
+                <li class="menu-item">
+                    <span>Japchae (Sweet Potato Glass Noodles)</span>
+                    <span class="price">10</span>
+                </li>
+                <li class="menu-item">
+                    <span>Gamja Jorim (Braised Potatoes)</span>
+                    <span class="price">9</span>
+                </li>
+                <li class="menu-item">
+                    <span>Namul (Seasoned Vegetables)</span>
+                    <span class="price">8</span>
+                </li>
+                <li class="menu-item">
+                    <span>Eomuk (Fish Cake Slices)</span>
+                    <span class="price">7</span>
+                </li>
+                <li class="menu-item">
+                    <span>Kimchi (Fermented Cabbage)</span>
+                    <span class="price">6</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="review-container">
+    <h1>Reviews</h1>
+
+    <!-- Review 1 -->
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">JK</div>
+            <div class="reviewer-details">
+                <p>Jin Kyung</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★★</span><span class="review-date">2 Weeks ago</span></p>
+        </div>
+        <div class="review-body">
+            <h3>Exceptional Korean Cuisine</h3>
+            <p>The Bibimbap was perfectly balanced with fresh vegetables, tender beef, and a rich gochujang sauce. The Kimchi Jjigae was the highlight of the meal – spicy, tangy, and full of comforting flavors. It’s some of the best Korean food I’ve had outside of Seoul.</p>
+            <p>Food: 5/5  |  Service: 4/5  |  Atmosphere: 5/5</p>
+            <p>Recommended dishes: Bibimbap, Kimchi Jjigae, Tteokbokki</p>
+        </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">MK</div>
+            <div class="reviewer-details">
+                <p>Min Kyu</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★☆</span><span class="review-date">4 Weeks ago</span></p>
+        </div>
+        <div class="review-body">
+            <h3>Delicious and Authentic</h3>
+            <p>The Bulgogi was tender, flavorful, and grilled to perfection. The Japchae was slightly sweet and loaded with fresh vegetables. The portions were generous, and the flavors felt truly authentic, though the restaurant was a bit busy during dinner hours.</p>
+            <p>Food: 4/5  |  Service: 3/5  |  Atmosphere: 4/5</p>
+            <p>Recommended dishes: Bulgogi, Japchae, Kimchi</p>
+        </div>
+    </div>
+</div>
+
+
+
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>
