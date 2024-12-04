@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Home Page -->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: 28th October 2024 -->
+    <!-- Validated: 30thOctober 2024-->
+    <title>JRJ Food Court</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="HomePage" content="JRJ Food Court homepage">
+    <meta name="keywords" content="Food, restaurants, floor">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                <img src="images/logo3.1.jpg" alt="logo">
+            </div>
+            <h3><a href = "index.html">JRJ Food Court</a></h3>
+            <p>Q5B, 93350 Kuching, Sarawak</p>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="ground-floor">
+                    <a href="kfc.html">KFC</a>
+                    <a href="dominos.html">Domino's Pizza</a>
+                    <a href="mcd.html">McDonalds</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="first-floor">
+                    <a href="tomo.html">Tomo</a>
+                    <a href="taiwanbowl.html">Taiwan Bowl</a>
+                    <a href="kimchi.html">Kimchi</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="second-floor">
+                    <a href="paris.html">Meet Me in Paris</a>
+                    <a href="fuoco.html">Fuoco</a>
+                    <a href="hautedolci.html">Haute Dolci</a>
+                </div></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="thecreatives.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<article>
+    <div id="banner">
+        <div id="banner-content">
+            Welcome to JRJ Food Court – Where Flavor Meets Convenience!
+        </div>
+    </div>
+    <div class="opening ">
+    <h1>Savor Delicious Meals, Explore Our Floors Online!</h1>
+    </div>
+    <div class="floor">
+        <div class="text">
+            <h2>Ground Floor - Fast Food Favorites</h2>
+            <p>Grab a quick bite with our range of delicious fast food options.</p>
+        </div>
+        <div class = "images">
+                <!-- This image is taken from https://www.wallpaperflare.com/search?wallpaper=KFC-->
+            <a href="kfc.html"><img src="images/kfc.jpg" alt="KFC"></a>
+            <!-- This image is taken by myself-->
+            <a href="dominos.html"><img src="images/fast_food_4.jpg" alt="Domino's Pizza"></a>
+            <!-- This image is taken from https://www.wallpaperflare.com/search?wallpaper=mcdonalds -->
+            <a href="mcd.html"><img src="images/mcdonaldo.jpg" alt="McDonalds"></a>
+        </div>
+    </div>
+        
+    <div class="floor">
+        <div class="text">
+            <h2>First Floor - Asian Delights</h2>
+            <p>Savor flavors from the Far East - Sushi, Noodles, and Rich Asian spices await.</p>
+        </div>
+        <div class="images">
+              <!-- This image is taken from https://1000logos.net/top-10-sushi-restaurant-logos/-->
+            <a href="tomo.html"><img src="images/japanese.jpg" alt="Tomo"></a>
+              <!-- This image is taken from https://www.behance.net/gallery/63899595/Taiwan-Bowl -->
+            <a href="taiwanbowl.html"><img src="images/taiwanese.jpg" alt="Taiwan Bowl"></a>
+              <!-- This image is taken from https://www.pinterest.com/pin/branding-for-the-korean-restaurant-->
+            <a href="kimchi.html"><img src="images/korean.gif" alt="Kimchi"></a>
+        </div>
+    </div>
+        
+    <div class="floor">
+        <div class="text">
+            <h2>Second Floor - Western Cuisine</h2>
+            <p>Savor the essence of Western cuisine! Immerse yourself in a symphony of hearty flavors..</p>
+        </div>
+        <div class="images">
+            <!-- This image is taken from https://www.instagram.com/meetmeinparisofficial/-->
+            <a href="paris.html"><img src="images/western1.jpg" alt="Meet Me in Paris"></a>
+            <!-- This image is taken from https://www.instagram.com/fuoco.restaurants/-->
+            <a href="fuoco.html"><img src="images/fuoco2.jpg" alt="Fuoco"></a>
+            <!-- This image is taken from https://hautedolci.pk/-->
+            <a href="hautedolci.html"><img src="images/hautedolce.jpg" alt="Haute Dolci"></a>
+        </div>
+    </div>
+</article>
+<div class="disclaimer">
+    <p><strong>Disclaimer:</strong> This website is created for education and non-commercial use only. It is an assignment for completion of unit, <strong>FST10011 Web Technologies</strong> for Foundation course from <strong>Swinburne University of Technology Sarawak Campus</strong>.</p>
+</div>
+<footer>
+    <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>

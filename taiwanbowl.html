@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Taiwan bowl -->
+    <!-- Author: Joel Ooi -->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>Taiwan Bowl</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Ooi">
+    <meta name="Taiwan bowl" content="Taiwan bowl webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<article class="restaurants">
+    <div class = "header">
+        <!-- This image is taken from https://www.behance.net/gallery/63899595/Taiwan-Bowl -->
+        <img src="images/taiwanese.jpg" alt="Taiwan Bowl Banner">
+        
+    </div>
+    <div class="header">
+    <a href="#target-section">
+        <!-- This image is taken from https://cooking.nytimes.com/recipes/1018570-chinese-stir-fried-tomatoes-and-eggs -->
+        <img src = "images/tomatoeggrice.jpg" alt="Tomato Egg Rice">
+        </a>
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        
+<div class="menu-section">
+    <div class="menu-column">
+        <ul>
+            <li><h2>RICE</h2></li>
+            <li class="menu-item">
+                <span>Beef Noodle Soup Rice</span>
+                <span class="price">18</span>
+            </li>
+            <li class="menu-item">
+                <span>Tomato egg (Fan Qie Chao Dan Fan)</span>
+                <span class="price">17</span>
+            </li>
+            <li class="menu-item">
+                <span>Lu Rou Fan (Braised Pork Rice)</span>
+                <span class="price">15</span>
+            </li>
+            <li class="menu-item">
+                <span>Chicken Drumstick Rice</span>
+                <span class="price">12</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="menu-column">
+        <figure>
+<!-- This image is taken from https://www.foodiebaker.com/pressure-cooker-lu-rou-fan/ -->
+            <img src="images/luroufan.jpg" alt="luroufan">
+        </figure>
+    </div>
+</div>
+
+<div class="menu-section">
+    <!-- Image Column -->
+    <div class="menu-column">
+        <figure>
+<!-- This image is taken from https://www.greatbritishchefs.com/recipes/gua-bao-recipe -->		
+            <img src="images/guabao.jpg" alt="guabao">
+        </figure>
+    </div>
+
+    <!-- Noodle Menu Column -->
+    <div class="menu-column">
+        <ul>
+            <li><h2>SIDE DISH</h2></li>
+            <li class="menu-item">
+                <span>Popcorn Chicken</span>
+                <span class="price">14</span>
+            </li>
+            <li class="menu-item">
+                <span>Gua Bao</span>
+                <span class="price">12</span>
+            </li>
+            <li class="menu-item">
+                <span>Scallion Pancake</span>
+                <span class="price">10</span>
+            </li>
+            <li class="menu-item">
+                <span>Steamed Dumplings</span>
+                <span class="price">9</span>
+            </li>
+            <li class="menu-item">
+                <span>Fried milk</span>
+                <span class="price">8</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+    
+<div class="review-container">
+    <h1>Reviews</h1>
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">WL</div>
+            <div class="reviewer-details">
+                <p>Wen Ling</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★★</span><span class="review-date">1 Weeks ago</span></p>
+        </div>
+        <div class="review-body">
+	<h3>A very pleasant experience</h3>
+	<p>
+		Hands down my favourite restaurant experience in Lahore to date.<br><br>
+    
+		<strong>Appetizer recommendations:</strong> Smashed sliders and beef tacos were both impeccable.<br><br>
+    
+		<strong>Main course:</strong><br>
+    - Lasagna Verde was scrumptious.<br>
+    - Spinach Alfredo with chicken was delectable.<br>
+    - Seared Salmon was also excellent but third out of the three.<br><br>
+    
+    Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5
+	</p>
+
+        </div>
+    </div>
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">TS</div>
+            <div class="reviewer-details">
+                <p>Tai Shan</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★☆</span><span class="review-date">3 Weeks ago</span></p>
+        </div>
+        <div class="review-body">
+            <h3>Great Food with Traditional Flavors</h3>
+		<p>
+		The Beef Noodle Soup Rice was rich and hearty, with tender beef slices and perfectly cooked rice. The Tomato Egg (Fan Qie Chao Dan Fan) was simple yet comforting, just like how my grandmother used to make it. 
+		The atmosphere was cozy, though it was a bit crowded during peak hours.<br><br>
+    
+		Food: 4/5  |  Service: 4/5  |  Atmosphere: 3/5<br><br>
+    
+		<strong>Recommended dishes:</strong> Beef Noodle Soup Rice, Tomato Egg, Scallion Pancake
+		</p>
+
+        </div>
+    </div>
+</div>
+
+
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>

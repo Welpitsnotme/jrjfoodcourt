@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Domino's Pizza -->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>Domino's Pizza</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="Domino's Pizza" content="Domino's Pizza webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<article class="restaurants">
+    <div class = "header">
+        <!-- This image is taken from https://www.allinharidwar.com/eating-out/dominos-pizza -->
+        <img src="images/dominos1.jpg" alt="domino's pizza banner">
+    </div>
+    <div class="header">
+        <a href="#target-section">
+        <!-- This image is taken from https://forbes.co/2021/04/19/empresas/dominos-pizza-inauguro-su-tienda-numero-120-en-el-pais-y-espera-abrir-25-mas-este-ano -->
+        <img src = "images/dominos2.jpg" alt="Pizzas">
+        </a>
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        <div class="menu-section">
+            <div class="menu-column">
+                <ul>
+                    <li><h2>PIZZA</h2></li>
+                    <li class="menu-item">
+                        <span>Aloha Chicken</span>
+                        <span class="price">14</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Beef Pepperoni</span>
+                        <span class="price">15</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Chicken Pepperoni</span>
+                        <span class="price">18</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Classified Chicken</span>
+                        <span class="price">17</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Tuna Temptation</span>
+                        <span class="price">19</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Prawn Sensation</span>
+                        <span class="price">17</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-column">
+                <figure>
+                            <!-- This image is taken from https://www.dominos.com.my/menu-pizza/aloha-chicken-pxac -->
+                    <img src="images/dominos3.avif" alt="Aloha Chicken Pizza">
+                </figure>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-column">
+                <figure>
+                    <!-- This images is taken from https://www.dominos.com.my/menu-side -->
+                    <img src = "images/dominos4.avif" alt="Breadstix">
+                </figure>
+            </div>
+
+            <div class="menu-column">
+                <ul>
+                    <li><h2>SIDES</h2></li>
+                    <li class="menu-item">
+                        <span>Breadstix</span>
+                        <span class="price">8</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cheezy Mozzarella Stix</span>
+                        <span class="price">10</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cinna Twist</span>
+                        <span class="price">8</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cinnastix</span>
+                        <span class="price">9</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Garlic French Loaf</span>
+                        <span class="price">10</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Garlic Twist</span>
+                        <span class="price">10</span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="review-container">
+        <h1>Reviews</h1>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">SS</div>
+                <div class="reviewer-details">
+                    <p>Saiful Selihin</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★★★★★</span><span class="review-date">6 Months ago</span></p>
+            </div>
+            <div class="review-body">
+                <h3>Domino's is life</h3>
+                <p>Life is incomplete without my Domino's Pizza.
+
+                    Luckily I know the tricks on how to get my order on time without me waiting for hours and with discounts. Giggity.
+                    
+                    Anywho, the DP mobile app helps.
+                    
+                    Also, avoid order using the FP mobile app. You'll regret it.
+                <p>Food: 5/5  |  Service: 5/5  |  Atmosphere: 4/5</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">EG</div>
+                <div class="reviewer-details">
+                    <p>Ella Glory</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★☆☆☆☆</span><span class="review-date">2 Months ago</span></p>
+            </div>
+            <div class="review-body">
+                <h3>Dissapointment</h3>
+                <p>I was so excited when i hear Domino's Pizza opening in Kuching.
+                    The food was good but disappointed at the cashier's behaviour,
+                    didn't even look at me when I was standing on the line to order as if I was invisible.
+                    She noticed me but purposely continue helping the guys packing pizzas and had to wait for her.
+                    I wish Domino's Pizza all the best in the future and good luck.</p>
+                    <p>Food: 4/5  |  Service: 1/5  |  Atmosphere: 1/5</p>
+            </div>
+        </div>
+    </div>
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>
+

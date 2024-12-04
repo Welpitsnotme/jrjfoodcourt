@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Home Page -->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: 28th October 2024 -->
+    <!-- Validated: 30thOctober 2024-->
+    <title>JRJ Food Court</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="HomePage" content="JRJ Food Court homepage">
+    <meta name="keywords" content="Food, restaurants, floor">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <article class="fback">
+        <form>
+            <h1 class="fback_msg">Give us your feedback</h1>
+            <h1 class = "fback_msg">so we can continue to deliver the best.</h1>
+            <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for = "name">Name*</label></td>
+                    <td><input type="text" id = "name" name="name" placeholder="Your name" size="25" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email*</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Your Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for ="phone-num">Phone number*</label></td>
+                    <td><input type="text" id = "phone-num" name="phonenum" placeholder="Your Phone Number" required></td>
+                </tr>
+            </table>
+            </fieldset>
+            <fieldset>
+            <legend>Feedback</legend>
+            <table>
+                <tr>
+                    <td><label for ="date">Date</label></td>
+                    <td><input type ="date" id="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td>Rating</td>
+                    <td class="rate-btn">
+                        <label for="good">Good</label><input type="radio" id="good" name="rating" value="good">
+                        <label for="average">Average</label><input type="radio" id="average" name="rating" value="average">
+                        <label for="poor">Poor</label><input type="radio" id="poor" name="rating" value="poor">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for = "feedback">Your Feedback</label></td>
+                    <td class="textarea"><textarea id = "feedback" name="feedback" rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="sbmt-btn"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+    </article>
+
+    <footer class="fback_footer">
+        <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+     </footer>
+</body>
+</html>

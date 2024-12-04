@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Domino's Pizza -->
+    <!-- Author: Joel Anak Jack -->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>KFC</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Anak Jack">
+    <meta name="KFC" content="KFC webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<article class="restaurants">
+    <div class = "header">
+        <a href="#target-section">
+        <!-- This image is taken from https://www.sickchirpse.com/paid-eat-kfc/ -->
+        <img src = "images/kfc1.jpg" alt="KFC food being laid on the table">
+        </a>
+    </div>
+    <div class="header">
+        <!-- This image is taken from https://www.nexd.com/blog/kfc-india-mediasmart-win-programmatic-advertising-awards/ -->
+        <img src="images/kfc2.png" alt="kfc banner">
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        
+        <div class="menu-section">
+            <div class="menu-column">
+                <ul>
+                    <li><h2>FAMILY BUCKETS</h2></li>
+                    <li class="menu-item">
+                        <span>6-pc Holiday Bucket</span>
+                        <span class="price">49</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>10-pc Holiday Bucket</span>
+                        <span class="price">75</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>5-pc Bucket</span>
+                        <span class="price">45</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>9-pc Combo</span>
+                        <span class="price">70</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>15-pc Combo</span>
+                        <span class="price">103</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>20-pc Combo</span>
+                        <span class="price">141</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-column">
+                <figure>
+                    <!-- This image is taken from https://www.yelp.com/biz_photos/kfc-saugus -->
+                    <img src="images/kfc4.jpg" alt="pancakes">
+                </figure>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-column">
+                <figure>
+                    <!-- This image is taken from https://www.yelp.com/biz_photos/kfc-saugus -->
+                    <img src = "images/kfc3.jpg" alt="lemonade">
+                </figure>
+            </div>
+
+            <div class="menu-column">
+                <ul>
+                    <li><h2>SIDES</h2></li>
+                    <li class="menu-item">
+                        <span>Cereal Cheezy Fries</span>
+                        <span class="price">9</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Fries</span>
+                        <span class="price">8</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Crispy Cheezy Fried Mozzarella</span>
+                        <span class="price">8</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>5-pcs Aloha Cheesy Balls</span>
+                        <span class="price">8</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cheezy Wedges</span>
+                        <span class="price">9</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Cheezy Popcorn Bowl</span>
+                        <span class="price">9</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="review-container">
+        <h1>Reviews</h1>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">DR</div>
+                <div class="reviewer-details">
+                    <p>Dorge Rajah</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★★★☆☆</span><span class="review-date">1 Year ago</span></p>
+            </div>
+            <div class="review-body">
+                <h3>An okay experience</h3>
+                <p>It was okay. Service was okay. Food ordered through a screen. The wait didnt take long. Very few customers probably due to current situation.
+
+                    Place is clean, handwash area pretty wet and so were the rest rooms.
+                    
+                    Atmosphere quite quiet and rather peaceful.
+                    <p>Food: 3/5  |  Service: 3/5  |  Atmosphere: 3/5</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">AD</div>
+                <div class="reviewer-details">
+                    <p>Adrian Dorhat</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★☆☆☆☆</span><span class="review-date">3 Months ago</span></p>
+            </div>
+            <div class="review-body">
+                <h3>Got my order wrong</h3>
+                <p>Went for drive-through. A few times wronged my order. Even added orders by mistake.
+                    I asked whether golden butter cereal is spicy or not, and he said it's definitely not.
+                    I don't patronize KFC, so i wouldn't know. My last. Rather go to the deaf branch in Matang Jaya.
+                    They work better than the normal here.
+                    <p>Food: 1/5  |  Service: 1/5  |  Atmosphere: 2/5</p>
+            </div>
+        </div>
+    </div>
+</article>
+<footer>
+    <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>

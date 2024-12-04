@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Description: Fuoco Web Page -->
+    <!-- Author: Abdullah Raaid-->
+    <!-- Date: October 2024 -->
+    <!-- Validated: October 2024 -->
+    <title>JRJ Food Court</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Abdullah Raaid">
+    <meta name="Fuoco Webpage" content="Fuoco Webpage">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                <img src="images/logo3.1.jpg" alt="logo">
+            </div>
+            <h3><a href = "index.html">JRJ Food Court</a></h3>
+            <p>Q5B, 93350 Kuching, Sarawak</p>
+            <ul>
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="ground-floor">
+                    <a href="kfc.html">KFC</a>
+                    <a href="dominos.html">Domino's Pizza</a>
+                    <a href="mcd.html">McDonalds</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="first-floor">
+                    <a href="tomo.html">Tomo</a>
+                    <a href="taiwanbowl.html">Taiwan Bowl</a>
+                    <a href="kimchi.html">Kimchi</a>
+                </div></li>
+                <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+                <li><div class="dropdown-container" id="second-floor">
+                    <a href="paris.html">Meet Me in Paris</a>
+                    <a href="fuoco.html">Fuoco</a>
+                    <a href="hautedolci.html">Haute Dolci</a>
+                </div></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="thecreatives.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<article class="restaurants">
+    <div class = "header">
+        <a href="#target-section">
+        <!-- This image is taken from https://hautedolci.pk/ -->
+        <img src = "images/hautedolce1.png" alt="Chocolate">
+        </a>
+        
+    </div>
+    <div class="header">
+        <!-- This image is taken from https://hautedolci.pk/ -->
+        <img src="images/hautedolce.jpg" alt="hautedolce banner">
+        <p></p>
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        
+        <div class="menu-section">
+            <div class="menu-column">
+                <ul>
+                    <li><h2>PANCAKES</h2></li>
+                    <li class="menu-item">
+                        <span>Plain Honey Pancake</span>
+                        <span class="price">7</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Chocoholic Pancake</span>
+                        <span class="price">15</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Buttermilk Pancake</span>
+                        <span class="price">18</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Very Berry Pancake</span>
+                        <span class="price">17</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Salted Pistachio Pancake</span>
+                        <span class="price">19</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>SMixed Fruit Pancake</span>
+                        <span class="price">17</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-column">
+                <figure>
+                    <img src="images/hautedolce.png" alt="pancakes">
+                </figure>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-column">
+                <figure>
+                    <img src = "images/hautedolci2.png" alt="lemonade">
+                </figure>
+            </div>
+
+            <div class="menu-column">
+                <ul>
+                    <li><h2>LEMONADE</h2></li>
+                    <li class="menu-item">
+                        <span>Mint Lemonade</span>
+                        <span class="price">34</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Pink Lemonade</span>
+                        <span class="price">33</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Kentucky Lemonade</span>
+                        <span class="price">36</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Hibiscus Lemonade</span>
+                        <span class="price">34</span>
+                    </li>
+                    <li class="menu-item">
+                        <span>Matcha Lemonade</span>
+                        <span class="price">45</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="review-container">
+        <h1>Reviews</h1>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">FS</div>
+                <div class="reviewer-details">
+                    <p>Farrukh Sheikh</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★★★★☆</span><span class="review-date">4 Months ago</span></p>
+            </div>
+        </div>
+            <div class="review-body">
+                <h3>A very pleasant experience</h3>
+                <p>Good Service, great ambience, savoury food options were ok. Desserts are better options are plenty.
+                    Best of the place is the San Sebastian cheese cake.
+                    Breakfast options are satisfactory but I won't b coming back for it.
+                    The service level is quite quite good. The head chef is a good professional lady. Facilitation level is very good. Staff is very cooperative and well trained.
+                    <p>Food: 4/5  |  Service: 5/5  |  Atmosphere: 5/5</p>
+                    <p>Recommended dishes:
+                    Spanish Omelette, Matilda Cake</p>
+            </div>
+        </div>
+        <div class="review">
+            <div class="reviewer-info">
+                <div class="reviewer-initials">MM</div>
+                <div class="reviewer-details">
+                    <p>Mehwish Malik</p>
+                </div>
+            </div>
+            <div class="review-rating">
+                <p><span class="stars">★★★★★</span><span class="review-date">2 Months ago</span></p>
+            </div>
+        </div>
+        <div class="review-body">
+            <h3>Best Place for fine dining</h3>
+            <p>This is the best fine dine in place in Lahore,
+                Quality food with yummiest taste.
+                I ordered pizza, chicken burger, chicken fingers n San Sebastian Cheesecake n waffles.
+                I m very happy to state all the dishes were top knocth n awesomely tasty.
+                It's highly recommended n loved from my side.
+                It was a dinner date with mom so I am happy that we enjoyed it at the most elite eatry in Lahore.
+                <p>Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5</p>
+                <p>Recommended dishes:
+                Classic Cheese Pizza, Beef Burger, Waffle</p>
+        </div>
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>

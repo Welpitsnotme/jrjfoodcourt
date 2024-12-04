@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Description: : Tomo Restaurant -->
+    <!-- Author: Joel Ooi-->
+    <!-- Date: December 2024 -->
+    <!-- Validated: December 2024-->
+    <title>Tomo Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Joel Ooi">
+    <meta name="Tomo Restaurant" content="Tomo Restaurant">
+    <meta name="keywords" content="Food, menu, sides">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class = "logo">
+            <img src="images/logo3.1.jpg" alt="logo">
+        </div>
+        <h3><a href = "index.html">JRJ Food Court</a></h3>
+        <p>Q5B, 93350 Kuching, Sarawak</p>
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('ground-floor')">Ground Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="ground-floor">
+                <a href="kfc.html">KFC</a>
+                <a href="dominos.html">Domino's Pizza</a>
+                <a href="mcd.html">McDonalds</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('first-floor')">First Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="first-floor">
+                <a href="tomo.html">Tomo</a>
+                <a href="taiwanbowl.html">Taiwan Bowl</a>
+                <a href="kimchi.html">Kimchi</a>
+            </div></li>
+            <li><button class="dropdown-btn" onclick="toggleDropdown('second-floor')">Second Floor &#128899;</button></li>
+            <li><div class="dropdown-container" id="second-floor">
+                <a href="paris.html">Meet Me in Paris</a>
+                <a href="fuoco.html">Fuoco</a>
+                <a href="hautedolci.html">Haute Dolci</a>
+            </div></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="thecreatives.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<article class="restaurants">
+    <div class = "header">
+        <!-- This image is taken from https://1000logos.net/top-10-sushi-restaurant-logos/ -->
+        <img src="images/japanese.jpg" alt="restaurantlogo">
+    </div>
+    <div class="header">
+        <a href="#target-section">
+        <!-- This image is taken from https://www.kitchenstories.com/en/recipes/crispy-chicken-katsu-curry -->
+        <img src = "images/katsucurry.jpg" alt="katsucurry">
+        </a>
+    </div>
+    <div id="target-section" class="menu-container">
+        <h1>Menu</h1>
+        
+<div class="menu-section">
+    <div class="menu-column">
+        <ul>
+            <li><h2>RICE</h2></li>
+            <li class="menu-item">
+                <span>Seafood Bowl (Kaisendon)</span>
+                <span class="price">20</span>
+            </li>
+            <li class="menu-item">
+                <span>Pork Cutlet Bowl (Katsu Curry)</span>
+                <span class="price">19</span>
+            </li>
+            <li class="menu-item">
+                <span>Beef Bowl (Gyudon)</span>
+                <span class="price">17</span>
+            </li>
+            <li class="menu-item">
+                <span>Eel Bowl (Unadon)</span>
+                <span class="price">17</span>
+            </li>
+            <li class="menu-item">
+                <span>Pork Bowl (Butadon)</span>
+                <span class="price">16</span>
+            </li>
+            <li class="menu-item">
+                <span>Chicken & Egg Bowl (Oyakodon)</span>
+                <span class="price">15</span>
+            </li>
+            <li class="menu-item">
+                <span>Curry Rice (Kare Raisu)</span>
+                <span class="price">14</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-column">
+        <figure>
+			<!-- This image is taken from https://www.theseasonedwok.com/gyudon-japanese-beef-bowl/ -->
+            <img src="images/gyudon.jpg" alt="Gyudon - Beef Bowl">
+        </figure>
+    </div>
+</div>
+
+<div class="menu-section">
+    <!-- Image Column -->
+    <div class="menu-column">
+        <figure>
+			<!-- This image is taken from https://glebekitchen.com/tonkotsu-ramen-home/ -->
+            <img src="images/japanese-noodle.jpg" alt="Japanese noodles">
+        </figure>
+    </div>
+
+    <!-- Noodle Menu Column -->
+    <div class="menu-column">
+        <ul>
+            <li><h2>NOODLE</h2></li>
+            <li class="menu-item">
+                <span>Tonkotsu Ramen (Pork Bone Broth)</span>
+                <span class="price">18</span>
+            </li>
+            <li class="menu-item">
+                <span>Spicy Miso Ramen</span>
+                <span class="price">17</span>
+            </li>
+            <li class="menu-item">
+                <span>Chicken Shoyu Ramen (Soy Sauce Broth)</span>
+                <span class="price">16</span>
+            </li>
+            <li class="menu-item">
+                <span>Beef Udon</span>
+                <span class="price">15</span>
+            </li>
+            <li class="menu-item">
+                <span>Tempura Soba</span>
+                <span class="price">14</span>
+            </li>
+            <li class="menu-item">
+                <span>Cold Soba (Zaru Soba)</span>
+                <span class="price">13</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+    
+<div class="review-container">
+    <h1>Reviews</h1>
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">AY</div>
+            <div class="reviewer-details">
+                <p>Akiko Yamamoto</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★★</span><span class="review-date">2 Weeks ago</span></p>
+        </div>
+        <div class="review-body">
+            <h3>Authentic Japanese Delicacies</h3>
+            <p>The flavors were incredibly authentic and reminded me of home. The Kaisendon (Seafood Bowl) was fresh and bursting with flavors, while the Tonkotsu Ramen had a rich, creamy broth that was absolutely perfect.
+               The atmosphere was serene, and the staff were very attentive and polite. 
+               <p>Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5</p>
+               <p>Recommended dishes: 
+               Seafood Bowl (Kaisendon), Tonkotsu Ramen, Tempura Soba</p>
+        </div>
+    </div>
+    <div class="review">
+        <div class="reviewer-info">
+            <div class="reviewer-initials">TS</div>
+            <div class="reviewer-details">
+                <p>Takeshi Saito</p>
+            </div>
+        </div>
+        <div class="review-rating">
+            <p><span class="stars">★★★★☆</span><span class="review-date">1 Month ago</span></p>
+        </div>
+        <div class="review-body">
+            <h3>Great Food and Cozy Atmosphere</h3>
+            <p>The Gyudon (Beef Bowl) was well-prepared with tender beef slices, and the Spicy Miso Ramen had the right amount of heat. 
+               I also appreciated the Cold Soba (Zaru Soba), which was refreshing and light, perfect for a warm day.
+               The service was a bit slow during peak hours, but the food made up for it.
+               <p>Food: 4/5  |  Service: 3/5  |  Atmosphere: 5/5</p>
+               <p>Recommended dishes: 
+               Beef Bowl (Gyudon), Spicy Miso Ramen, Cold Soba (Zaru Soba)</p>
+        </div>
+    </div>
+</div>
+
+</article>
+<footer>
+   <p>&copy;<a href="thecreatives.html">The Creatives</a> | Last updated: December 2024</p>
+</footer>
+</body>
+</html>
